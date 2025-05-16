@@ -46,7 +46,7 @@ const authMiddleware = (req, res, next) => {
 };
 
 app.get("/test", (req, res) => {
-  res.send("Working fine");
+  res.send("Working fine!!!");
 });
 
 // Routes
