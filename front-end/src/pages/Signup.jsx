@@ -53,6 +53,7 @@ function Signup({isLoggedIn, setIsLoggedIn}) {
   return (
     <div className="pt-16 px-20 min-h-screen w-full flex items-center justify-center">
       <div className="min-w-1/3 bg-slate-200 p-8 rounded-2xl">
+        <h1 className="text-2xl font-bold text-center pb-6">Create new account.</h1>
         <form onSubmit={register} className=" flex flex-col gap-6">
           <div className="flex gap-2 flex-col">
             <label htmlFor="username">User Name</label>
@@ -83,7 +84,7 @@ function Signup({isLoggedIn, setIsLoggedIn}) {
           </button>
         </form>
         <p className="pt-4">
-          Already have an account? <Link to="/login">Login</Link>
+          Already have an account? <Link to="/login" className="text-blue-600">Login</Link>
         </p>
       </div>
     </div>
